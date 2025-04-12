@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">App_v4</string>
+    <string name="kfc_logo_description">KFC Logo</string>
+    <string name="login_title">Tizimga kirish</string>
+    <string name="account_question">Shaxsiy akkauntingiz yo\'qmi?</string>
+    <string name="register_button">Hoziroq ro\'yxatdan o\'ting</string>
+</resources>

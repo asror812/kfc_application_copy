@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Title Bar -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menyu"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@color/grey"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Qidirish"
+        android:padding="12dp"
+        android:background="@drawable/rounded_search_bar"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:drawablePadding="8dp"
+        android:layout_margin="15dp" />
+
+    <!-- Category Navigation -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:background="@color/white"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Burgerlar"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_burger"
+                android:drawablePadding="4dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salad"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Twisterlar"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basketlar"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suvli tovuq"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suvli Kartoshka va sneklar"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sovuq ichimliklar"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Product List -->
+   <ListView
+       android:id="@+id/productList"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   </ListView>
+</LinearLayout>

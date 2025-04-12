@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bottom_sheet_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tilni tanlang"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/languageRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/uzRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O‘zbek"
+            android:textColor="#FFFFFF"
+            android:buttonTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/enRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:textColor="#FFFFFF"
+            android:buttonTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/ruRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Русский"
+            android:textColor="#FFFFFF"
+            android:buttonTint="@color/white" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/saveLanguageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saqlash"
+        android:backgroundTint="#D40000"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
